@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/action_list"
+        android:title="list"
+        android:orderInCategory="100"
+        android:icon="@drawable/list"
+        android:background ="@color/colorNight"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_scan"
+        android:orderInCategory="100"
+        android:title="Scan"
+        android:icon="@drawable/scan"
+        android:background ="@color/colorNight"
+        app:showAsAction="ifRoom" />
+</menu>
