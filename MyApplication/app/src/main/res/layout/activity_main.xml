@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
@@ -8,29 +9,59 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/bk"
     tools:context="edu.umn.minds.testinjection.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:id="@+id/textView" />
-
-    <Button
-        android:text="Button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView"
+    <ImageView
+        android:id="@+id/light"
+        android:layout_width="223dp"
+        android:layout_height="209dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="135dp"
-        android:id="@+id/button" />
+        android:layout_marginTop="90dp"
+        app:srcCompat="@drawable/light_dark" />
+
+    <View
+        android:layout_width="150dp"
+        android:id="@+id/divider"
+        android:layout_height="5px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/light"/>
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/light"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/radius"
+        android:text="open"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"/>
 
     <Button
-        android:text="close"
+        android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/button"
         android:layout_alignStart="@+id/button"
-        android:layout_marginTop="60dp"
-        android:id="@+id/button2" />
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/radius"
+        android:text="close"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/light"
+        android:textSize="20dp"
+        android:text="LightControl" />
+
+
 </RelativeLayout>

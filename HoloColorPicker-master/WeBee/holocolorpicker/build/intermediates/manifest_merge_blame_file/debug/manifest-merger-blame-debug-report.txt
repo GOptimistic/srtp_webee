@@ -4,8 +4,8 @@
 4
 5    <uses-sdk
 6        android:minSdkVersion="8"
-6-->D:\Project\LEDControl\HoloColorPicker-master\WeBee\holocolorpicker\src\main\AndroidManifest.xml
+6-->E:\projects\srtp_webee\HoloColorPicker-master\WeBee\holocolorpicker\src\main\AndroidManifest.xml
 7        android:targetSdkVersion="21" />
-7-->D:\Project\LEDControl\HoloColorPicker-master\WeBee\holocolorpicker\src\main\AndroidManifest.xml
+7-->E:\projects\srtp_webee\HoloColorPicker-master\WeBee\holocolorpicker\src\main\AndroidManifest.xml
 8
 9</manifest>

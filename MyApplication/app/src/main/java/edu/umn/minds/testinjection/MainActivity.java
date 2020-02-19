@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+import android.widget.ImageView;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -33,6 +34,8 @@ public class MainActivity extends AppCompatActivity {
                 CmdThread thread = new CmdThread();
                 running = true;
                 thread.start();
+                ImageView lemp =(ImageView)findViewById(R.id.light);
+                lemp.setImageResource(R.drawable.light_light);
             }
         });
 
@@ -41,6 +44,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
               running = false;
+                ImageView lemp =(ImageView)findViewById(R.id.light);
+                lemp.setImageResource(R.drawable.light_dark);
             }
         });
 
