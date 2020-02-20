@@ -10,7 +10,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="edu.umn.minds.webee.MainActivity"
-    android:background="#000000">
+    android:background="@drawable/bk">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,20 +18,24 @@
         android:orientation="horizontal">
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="65dp"
             android:id="@+id/tx_color"
             android:textColor="#FFFFFF"
+            android:background="@drawable/radius"
             android:text="0xFFFFFF"
-            android:textSize="35dp"
+            android:textSize="30sp"
+            android:textAlignment="center"
             android:layout_weight="1"/>
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
             android:id="@+id/tx_colorIndex"
             android:textColor="#FFFFFF"
             android:text="0"
-            android:textSize="35dp"
+            android:background="@drawable/radius"
+            android:textSize="35sp"
+            android:textAlignment="center"
             android:layout_weight="1"/>
 
     </LinearLayout>
@@ -55,6 +59,7 @@
 
 
     <ImageButton
+        android:contentDescription=""
         android:layout_width="100dp"
         android:layout_height="100dp"
         app:srcCompat="@drawable/off"
