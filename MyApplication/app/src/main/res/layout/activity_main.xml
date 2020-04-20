@@ -23,22 +23,23 @@
     <View
         android:layout_width="150dp"
         android:id="@+id/divider"
-        android:layout_height="5px"
+        android:layout_height="2dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="45dp"
         android:background="@android:color/darker_gray"
         android:layout_below="@+id/light"/>
+
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_below="@+id/light"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="80dp"
         android:background="@drawable/radius"
         android:text="open"
         android:textColor="#FFFFFF"
-        android:textSize="18dp"/>
+        android:textSize="20dp" />
 
     <Button
         android:id="@+id/button2"
@@ -51,7 +52,7 @@
         android:background="@drawable/radius"
         android:text="close"
         android:textColor="#FFFFFF"
-        android:textSize="18dp"/>
+        android:textSize="20dp"/>
 
     <TextView
         android:id="@+id/textView2"
